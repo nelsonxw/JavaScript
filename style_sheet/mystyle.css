@@ -1,0 +1,39 @@
+.jumbotron {
+  background-size: 100% 100%;
+  height: 300px;
+}
+
+#jumbotron-1 {
+  background-image: url("../images/ufo_1.jpg");
+}
+
+#jumbotron-2 {
+  background-image: url("../images/ufo_2.jpg");
+}
+
+#jumbotron-3 {
+  background-image: url("../images/ufo_3.jpg");
+}
+
+#jumbotron-4 {
+  background-image: url("../images/ufo_4.jpg");
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+/*.pagination li {
+  padding:7px;
+  font-size: 18px;
+}
+*/
+/*.active {
+  background-color: blue;
+  color: white;
+}*/
