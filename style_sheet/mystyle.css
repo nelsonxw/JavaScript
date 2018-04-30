@@ -1,24 +1,52 @@
+@media only screen and (max-width: 576px) {
+/*define jumbotron styles*/
 .jumbotron {
   background-size: 100% 100%;
   height: 300px;
 }
-
 #jumbotron-1 {
   background-image: url("../images/ufo_1.jpg");
 }
-
 #jumbotron-2 {
   background-image: url("../images/ufo_2.jpg");
 }
-
+#jumbotron-2 h1 {
+  position: relative; 
+  bottom: -150px;
+  left: 20px;
+}
+#jumbotron-2 p {
+  position: relative; 
+  bottom: -150px;
+  left: 20px; 
+  color: white;
+}
 #jumbotron-3 {
   background-image: url("../images/ufo_3.jpg");
 }
-
+#jumbotron-3 h1 {
+  position: relative; 
+  bottom: -170px;
+/*  left: -100px; */
+  color: white;
+}
+#jumbotron-3 p {
+  position: relative; 
+  bottom: -170px;
+/*  left: -100px; */
+  color: white;
+}
 #jumbotron-4 {
   background-image: url("../images/ufo_4.jpg");
 }
+#jumbotron-4 h1 {
+  color: white;
+}
+#jumbotron-4 p {
+  color: white;
+}
 
+/*define carousel styles*/
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -28,12 +56,111 @@
   border-radius: 100%;
 }
 
-/*.pagination li {
-  padding:7px;
-  font-size: 18px;
+/*set the column width the same unless specified differently by element*/
+#myTable {
+  table-layout: fixed;
+    width: 100%;
 }
-*/
-/*.active {
-  background-color: blue;
+
+/*define the reset button style*/
+#reset {
+  margin-bottom: 20px;
+  font-size: 15px;"
+}
+
+table, thead, tbody, th, td, tr { 
+  display: block; 
+}
+  
+}
+
+@media only screen and (min-width: 577px) {
+/*define jumbotron styles*/
+.jumbotron {
+  background-size: 100% 100%;
+  height: 300px;
+}
+#jumbotron-1 {
+  background-image: url("../images/ufo_1.jpg");
+}
+#jumbotron-1 h1 {
+  font-size: 60px; 
+  position: relative; 
+  top: -50px;
+  left: -200px;
+}
+#jumbotron-1 p {
+  position: relative; 
+  top: -50px;
+  left: -200px;
+}
+#jumbotron-2 {
+  background-image: url("../images/ufo_2.jpg");
+}
+#jumbotron-2 h1 {
+  font-size: 60px; 
+  position: relative; 
+  bottom: -120px;
+  left: 300px;
+}
+#jumbotron-2 p {
+  position: relative; 
+  bottom: -120px;
+  left: 300px; 
   color: white;
-}*/
+}
+#jumbotron-3 {
+  background-image: url("../images/ufo_3.jpg");
+}
+#jumbotron-3 h1 {
+  font-size: 60px; 
+  position: relative; 
+  bottom: -120px;
+  left: -300px; 
+  color: white;
+}
+#jumbotron-3 p {
+  position: relative; 
+  bottom: -120px;
+  left: -300px; 
+  color: white;
+}
+#jumbotron-4 {
+  background-image: url("../images/ufo_4.jpg");
+}
+#jumbotron-4 h1 {
+  font-size: 60px; 
+  position: relative; 
+  top: -50px;
+  left: -200px; 
+  color: white;
+}
+#jumbotron-4 p {
+  position: relative; 
+  top: -30px;
+  left: -100px;
+}
+
+/*define carousel styles*/
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 100%;
+}
+
+/*set the column width the same unless specified differently by element*/
+#myTable {
+	table-layout: fixed;
+  	width: 100%;
+}
+
+/*define the reset button style*/
+#reset {
+  margin-bottom: 20px;
+  font-size: 15px;"
+}
+
+}

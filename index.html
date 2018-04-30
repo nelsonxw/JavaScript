@@ -14,41 +14,43 @@
   </head>
   <body>
 	<div class="container-fluid">
-		
+		<!-- start of carousel section -->
 	    <div id="my_carousel" class="carousel slide" data-ride="carousel">
+		  <!-- define carousel indicators -->
 		  <ol class="carousel-indicators">
 		    <li data-target="#my_carousel" data-slide-to="0" class="active"></li>
 		    <li data-target="#my_carousel" data-slide-to="1"></li>
 		    <li data-target="#my_carousel" data-slide-to="2"></li>
 		    <li data-target="#my_carousel" data-slide-to="3"></li>
 		  </ol>
+		  <!-- define carousel item header text -->
 		  <div class="carousel-inner">
 		    <div class="carousel-item active">
 		    	<div class="jumbotron text-center" id="jumbotron-1">
-					<h1 style="font-size: 60px; position: relative; top: -50px;left: -200px;">UFO Sightings</h1>
-		      		<p style="position: relative; top: -50px;left: -200px;">Believe it or not...</p>
-		    	</div>
-		      	
+					<h1>UFO Sightings</h1>
+		      		<p>Believe it or not...</p>
+		    	</div> 	
 		    </div>
 		    <div class="carousel-item">
 		      	<div class="jumbotron text-center" id="jumbotron-2">
-					<h1 style="font-size: 60px; position: relative; bottom: -120px;left: 300px;">UFO Sightings</h1>
-		      		<p style="position: relative; bottom: -120px;left: 300px; color: white">Believe it or not...</p>
+					<h1>UFO Sightings</h1>
+		      		<p>Believe it or not...</p>
 		    	</div>
 		    </div>
 		    <div class="carousel-item">
 		      	<div class="jumbotron text-center" id="jumbotron-3">
-					<h1 style="font-size: 60px; position: relative; bottom: -120px;left: -300px; color: white">UFO Sightings</h1>
-		      		<p style="position: relative; bottom: -120px;left: -300px; color: white">Believe it or not...</p>
+					<h1>UFO Sightings</h1>
+		      		<p>Believe it or not...</p>
 		    	</div>
 		    </div>
 		    <div class="carousel-item">
 		      	<div class="jumbotron text-center" id="jumbotron-4">
-					<h1 style="font-size: 60px; position: relative; top: -50px;left: -200px; color: white">UFO Sightings</h1>
-		      		<p style="position: relative; top: -30px;left: -100px;">Believe it or not...</p>
+					<h1>UFO Sightings</h1>
+		      		<p>Believe it or not...</p>
 		    	</div>
 		    </div>
 		  </div>
+		  <!-- define carousel Previous and Next buttons -->
 		  <a class="carousel-control-prev" href="#my_carousel" role="button" data-slide="prev">
 		    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Previous</span>
@@ -57,10 +59,12 @@
 		    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 		    <span class="sr-only">Next</span>
 		  </a>
-		</div>
+		</div> <!-- end of carousel section -->
 
 	    <div class="row">
+	      <!-- start of filter and search section -->
 	      <div class="col-md-2">
+	      	<input type="button" value="Reset Filter and Research" onClick="window.location.reload()" id="reset">
 	      	<form onsubmit="Fn_search(event)">
 	      		<label>Search by Date</label>
 	      		<div>
@@ -82,12 +86,10 @@
 	      		</div>
 	      	</form>
 
-	      	<br>
-
 	      	<div>
 	      		<label> Filter by Country
 		      		<div>
-		      			<select id="filter_country" onchange="Fn_search(event)" style="width: 180px; height: 30px;">
+		      			<select id="filter_country" onchange="Fn_search(event)" style="width: 180px; height: 30px; margin-top: 20px;">
 				      		<option value="all">All</option>
 						</select>
 		      		</div>	
@@ -102,38 +104,52 @@
 						</select>
 		      		</div>	
 	      		</label>
-	      	</div>
-	      	
-		      	
-	      		
-	      </div>	
+	      	</div>		
+	      </div> <!-- end of filter and search section -->	
+
 	      <div class="col-md-10">
 	      	<div class="row">
+		      	<!-- start of navigation section -->
 		      	<nav aria-label="Page navigation">
-				  <!-- <ul class="pagination pagination-lg" id="row-pagination"> -->
-				  <ul class="pagination" id="row-pagination" onclick="selectedPage(event)">
-				  </ul>
+				  	<label style="vertical-align: bottom; margin-bottom: 20px;"> Records per Page
+					  	<select id="page-limit" onchange="changeLimit(this.options[this.selectedIndex].text)" style="flex-flow: right">
+				      		<option value="25">25</option>
+							<option value="25">50</option>
+							<option value="25">100</option>
+						</select>
+				  	</label>
+				  	
+				  	<ul class="pagination pagination-sm" id="row-pagination" onclick="clickPage(event)" style="margin-left: 20px; float: right;">
+				  	</ul>
 				</nav>
-			</div>
+			</div> <!-- end of navigation section -->
 
-
-
+			<!-- start of table section -->
 			<div class="row">
-		        <table id="myTable" class="table table-striped" style="table-layout: fixed;">
+		        <table id="myTable" class="table table-striped">
 		          <thead>
-		            <tr>
-		            </tr>
+		            <tr> 
+		            	<th>Date</th>
+		            	<th>City</th>
+						<th>State</th>
+						<th>Country</th>
+						<th>Shape</th>
+						<th>Duration</th>
+						<th style="width: 500px;">Comments</th>
+		         	</tr>
 		          </thead>
 		          <tbody>
 		          </tbody>
 		        </table>
-		    </div>
+		    </div> <!-- end of table section -->
 	      </div>
 		</div>
 	</div>
 
+	<!-- use customized javascript and import data -->
     <script src="javascript/ufo_data.js" type="text/javascript"></script>
     <script src="javascript/index.js" type="text/javascript"></script>
+    <!-- use Bootstrap 4 javascripts -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
