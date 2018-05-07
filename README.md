@@ -1,4 +1,4 @@
-# UFO-Sightings-online-table
+# UFO-sightings-online-table
 ### Project Purpose:
 
 To create a dynamic table online based on UFO sighting data. 
@@ -18,4 +18,4 @@ Click [here](https://nelsonxw.github.io/UFO-Sightings-online-table/) to open the
 + Use **HTML** and **CSS** to build web page.
 + Use **JavaScript** to append table rows and data to the web page.
 + Use **Bootstrap** to create pagination functions and carousel features on the web site.
-+ Use **Github** to serve the web sites
++ Use **GitHub** to serve the web sites
