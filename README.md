@@ -12,7 +12,7 @@ To create a dynamic table online based on UFO sighting data.
 + A pagination functions on the web site to handle page changes and calculate the number of results to display on pages.
 + A user input feature that allows users to select how many records to display on each page.
 
-Click [here](https://nelsonxw.github.io/UFO-Sightings-online-table/) to open the web page.
+Click [here](https://nelsonxw.github.io/UFO-sightings-online-table/) to open the web page.
 
 ### Techniques used:
 + Use **HTML** and **CSS** to build web page.
