@@ -13,15 +13,14 @@ var page_limit = 25;
 var page_num = 1;
 var start_page = 1;
 
-/*Start the table body with a blank HTML*/
-$tbody.innerHTML = "";
-
 /*initiate and import data*/
 var filtered_data = ufo_data;
 table_update();
 
 /*define a function to populate table*/
 function table_update() {
+	/*clear the table body*/
+	$tbody.innerHTML = "";	
 	/*the outer loop fills the rows and the inner loop fills the cells for each row*/
 	for (var i = 0; i < filtered_data.length; i++) {
 	  var $body_row = $tbody.insertRow(i);
