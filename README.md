@@ -1,6 +1,7 @@
 # UFO Sightings Data Search
 
-Link to web application: https://nelsonxw.github.io/UFO-Sightings/
+Link to web application: https://nelsonxw.github.io/UFO-Sightings/  
+<img src="/images/Capture.PNG" width="800">  
 
 ### Objectives:
 + Create a web page where a dynamic table is created to show reports of UFO witnesses.
