@@ -1,18 +1,12 @@
-# UFO Sightings Data Collection
-### Project Purpose:
+# UFO Sightings Data Search
 
-To create a dynamic table online based on UFO sighting data. 
+Link to web application: https://nelsonxw.github.io/UFO-Sightings/
 
-
-### Project Output:
-
-
-+ A web page where a dynamic table is created to show reports of UFO witnesses.
-+ A user input feature that allows users to search and filter data in the table.
-+ A pagination functions on the web site to handle page changes and calculate the number of results to display on pages.
-+ A user input feature that allows users to select how many records to display on each page.
-
-Click [here](https://nelsonxw.github.io/UFO-Sightings/) to open the web page.
+### Objectives:
++ Create a web page where a dynamic table is created to show reports of UFO witnesses.
++ Allows users to search and filter data in the table.
++ Allows users to select how many records to display on each page.
++ Create a pagination functions on the web site to handle page changes.
 
 ### Techniques used:
 + Use **HTML** and **CSS** to build web page.
