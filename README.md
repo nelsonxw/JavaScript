@@ -12,3 +12,9 @@ Link to web application: https://nelsonxw.github.io/UFO-Sightings/
 HTML, CSS, JavaScript, Bootstrap, GitHub
 
 ### Major Steps:
++ Used HTML, CSS and Bootstrap to build the index page.
+    + Created carousel section
+    + Created filter and search section
+    + Created page navigation section
+    + Created table section
++ Used JavaScript to read in data and insert a table to the table section on the index page
