@@ -13,13 +13,13 @@ Link to web application: https://nelsonxw.github.io/UFO-Sightings/
 HTML, CSS, JavaScript, Bootstrap, GitHub
 
 ### Major Steps:
-+ Used HTML, CSS and Bootstrap to build the index page.
+1 Used HTML, CSS and Bootstrap to build the index page.
     + Created carousel section
     + Created filter and search section
     + Created page navigation section
     + Created table section
-+ Used JavaScript to read in data
-+ Used a for loop to insert a table to the table section on the index page
+2. Used JavaScript to read in data
+3. Used a for loop to insert a table to the table section on the index page
 ```javascript
 /*define a function to populate table*/
 function table_update() {
@@ -38,7 +38,7 @@ function table_update() {
 	pagination();
 }
 ```
-+ Created a search event function which will be called when user enter data for search or filter
+4. Created a search event function which will be called when user enter data for search or filter
 ```javascript
 /*define a function to search and filter data based on user entry and selections*/
 function Fn_search(event) {	
