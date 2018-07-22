@@ -14,9 +14,9 @@ HTML, CSS, JavaScript, Bootstrap, GitHub
 
 ### Major Steps:
 1 Used HTML, CSS and Bootstrap to build the index page.
-    + Created carousel section
-    + Created filter and search section
-    + Created page navigation section
+    + Created carousel section  
+    + Created filter and search section  
+    + Created page navigation section  
     + Created table section  
 2. Used JavaScript to read in data  
 3. Used a for loop to insert a table to the table section on the index page  
