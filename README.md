@@ -17,9 +17,9 @@ HTML, CSS, JavaScript, Bootstrap, GitHub
     + Created carousel section
     + Created filter and search section
     + Created page navigation section
-    + Created table section
-2. Used JavaScript to read in data
-3. Used a for loop to insert a table to the table section on the index page
+    + Created table section  
+2. Used JavaScript to read in data  
+3. Used a for loop to insert a table to the table section on the index page  
 ```javascript
 /*define a function to populate table*/
 function table_update() {
